@@ -11,6 +11,8 @@
 		EEF83DB01DE9BF1C0067C3A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF83DAF1DE9BF1C0067C3A9 /* main.m */; };
 		EEF83DB21DE9BF1C0067C3A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEF83DB11DE9BF1C0067C3A9 /* Assets.xcassets */; };
 		EEF83DB51DE9BF1C0067C3A9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEF83DB31DE9BF1C0067C3A9 /* MainMenu.xib */; };
+		EEF83DBE1DE9BF6A0067C3A9 /* GlobalHotKeyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF83DBD1DE9BF6A0067C3A9 /* GlobalHotKeyManager.m */; };
+		EEF83DC11DE9C0820067C3A9 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF83DC01DE9C0820067C3A9 /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,9 @@
 		EEF83DB11DE9BF1C0067C3A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEF83DB41DE9BF1C0067C3A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		EEF83DB61DE9BF1C0067C3A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEF83DBC1DE9BF6A0067C3A9 /* GlobalHotKeyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalHotKeyManager.h; sourceTree = "<group>"; };
+		EEF83DBD1DE9BF6A0067C3A9 /* GlobalHotKeyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalHotKeyManager.m; sourceTree = "<group>"; };
+		EEF83DC01DE9C0820067C3A9 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF83DC11DE9C0820067C3A9 /* Carbon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +45,7 @@
 			children = (
 				EEF83DAA1DE9BF1C0067C3A9 /* FastSearchJabber */,
 				EEF83DA91DE9BF1C0067C3A9 /* Products */,
+				EEF83DBF1DE9C0820067C3A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +62,8 @@
 			children = (
 				EEF83DAB1DE9BF1C0067C3A9 /* AppDelegate.h */,
 				EEF83DAC1DE9BF1C0067C3A9 /* AppDelegate.m */,
+				EEF83DBC1DE9BF6A0067C3A9 /* GlobalHotKeyManager.h */,
+				EEF83DBD1DE9BF6A0067C3A9 /* GlobalHotKeyManager.m */,
 				EEF83DB11DE9BF1C0067C3A9 /* Assets.xcassets */,
 				EEF83DB31DE9BF1C0067C3A9 /* MainMenu.xib */,
 				EEF83DB61DE9BF1C0067C3A9 /* Info.plist */,
@@ -69,6 +78,14 @@
 				EEF83DAF1DE9BF1C0067C3A9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EEF83DBF1DE9C0820067C3A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEF83DC01DE9C0820067C3A9 /* Carbon.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEF83DB01DE9BF1C0067C3A9 /* main.m in Sources */,
+				EEF83DBE1DE9BF6A0067C3A9 /* GlobalHotKeyManager.m in Sources */,
 				EEF83DAD1DE9BF1C0067C3A9 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

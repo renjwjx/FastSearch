@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "GlobalHotKeyManager.h"
 
 @interface AppDelegate ()
 
@@ -17,11 +18,14 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    [[GlobalHotKeyManager ShareInstance] registerGlobalHotKey];
+    
 }
 
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
+    [[GlobalHotKeyManager ShareInstance] unRegisterGlobalHotKey];
 }
 
 
