@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EEF83DAD1DE9BF1C0067C3A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF83DAC1DE9BF1C0067C3A9 /* AppDelegate.m */; };
+		EEF83DB01DE9BF1C0067C3A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF83DAF1DE9BF1C0067C3A9 /* main.m */; };
+		EEF83DB21DE9BF1C0067C3A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEF83DB11DE9BF1C0067C3A9 /* Assets.xcassets */; };
+		EEF83DB51DE9BF1C0067C3A9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEF83DB31DE9BF1C0067C3A9 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EEF83DA81DE9BF1C0067C3A9 /* FastSearchJabber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastSearchJabber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEF83DAB1DE9BF1C0067C3A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EEF83DAC1DE9BF1C0067C3A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EEF83DAF1DE9BF1C0067C3A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EEF83DB11DE9BF1C0067C3A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEF83DB41DE9BF1C0067C3A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		EEF83DB61DE9BF1C0067C3A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEF83DA51DE9BF1C0067C3A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EEF83D9F1DE9BF1C0067C3A9 = {
+			isa = PBXGroup;
+			children = (
+				EEF83DAA1DE9BF1C0067C3A9 /* FastSearchJabber */,
+				EEF83DA91DE9BF1C0067C3A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EEF83DA91DE9BF1C0067C3A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEF83DA81DE9BF1C0067C3A9 /* FastSearchJabber.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEF83DAA1DE9BF1C0067C3A9 /* FastSearchJabber */ = {
+			isa = PBXGroup;
+			children = (
+				EEF83DAB1DE9BF1C0067C3A9 /* AppDelegate.h */,
+				EEF83DAC1DE9BF1C0067C3A9 /* AppDelegate.m */,
+				EEF83DB11DE9BF1C0067C3A9 /* Assets.xcassets */,
+				EEF83DB31DE9BF1C0067C3A9 /* MainMenu.xib */,
+				EEF83DB61DE9BF1C0067C3A9 /* Info.plist */,
+				EEF83DAE1DE9BF1C0067C3A9 /* Supporting Files */,
+			);
+			path = FastSearchJabber;
+			sourceTree = "<group>";
+		};
+		EEF83DAE1DE9BF1C0067C3A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEF83DAF1DE9BF1C0067C3A9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEF83DA71DE9BF1C0067C3A9 /* FastSearchJabber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEF83DB91DE9BF1C0067C3A9 /* Build configuration list for PBXNativeTarget "FastSearchJabber" */;
+			buildPhases = (
+				EEF83DA41DE9BF1C0067C3A9 /* Sources */,
+				EEF83DA51DE9BF1C0067C3A9 /* Frameworks */,
+				EEF83DA61DE9BF1C0067C3A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FastSearchJabber;
+			productName = FastSearchJabber;
+			productReference = EEF83DA81DE9BF1C0067C3A9 /* FastSearchJabber.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEF83DA01DE9BF1C0067C3A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = jinren;
+				TargetAttributes = {
+					EEF83DA71DE9BF1C0067C3A9 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 49XFPF8C85;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EEF83DA31DE9BF1C0067C3A9 /* Build configuration list for PBXProject "FastSearchJabber" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEF83D9F1DE9BF1C0067C3A9;
+			productRefGroup = EEF83DA91DE9BF1C0067C3A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEF83DA71DE9BF1C0067C3A9 /* FastSearchJabber */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEF83DA61DE9BF1C0067C3A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEF83DB21DE9BF1C0067C3A9 /* Assets.xcassets in Resources */,
+				EEF83DB51DE9BF1C0067C3A9 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEF83DA41DE9BF1C0067C3A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEF83DB01DE9BF1C0067C3A9 /* main.m in Sources */,
+				EEF83DAD1DE9BF1C0067C3A9 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EEF83DB31DE9BF1C0067C3A9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEF83DB41DE9BF1C0067C3A9 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EEF83DB71DE9BF1C0067C3A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EEF83DB81DE9BF1C0067C3A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EEF83DBA1DE9BF1C0067C3A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 49XFPF8C85;
+				INFOPLIST_FILE = FastSearchJabber/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.FastSearchJabber;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EEF83DBB1DE9BF1C0067C3A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 49XFPF8C85;
+				INFOPLIST_FILE = FastSearchJabber/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cisco.FastSearchJabber;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEF83DA31DE9BF1C0067C3A9 /* Build configuration list for PBXProject "FastSearchJabber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEF83DB71DE9BF1C0067C3A9 /* Debug */,
+				EEF83DB81DE9BF1C0067C3A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEF83DB91DE9BF1C0067C3A9 /* Build configuration list for PBXNativeTarget "FastSearchJabber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEF83DBA1DE9BF1C0067C3A9 /* Debug */,
+				EEF83DBB1DE9BF1C0067C3A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EEF83DA01DE9BF1C0067C3A9 /* Project object */;
+}
