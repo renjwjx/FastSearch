@@ -6,8 +6,10 @@
 //  Copyright © 2016 jinren. All rights reserved.
 //
 
-#import "GlobalHotKeyManager.h"
+
 #import <Carbon/Carbon.h>
+#import "GlobalHotKeyManager.h"
+#import "JWStatusBarManager.h"
 
 @implementation GlobalHotKeyManager
 
@@ -20,8 +22,8 @@ static EventHotKeyRef a_HotKeyRef = NULL;
 static EventHotKeyRef b_HotKeyRef = NULL;
 
 //快捷键注册使用的信息，用在回调中判断是哪个快捷键被触发
-static EventHotKeyID a_HotKeyID = {'keyA',1};
-static EventHotKeyID b_HotKeyID = {'keyB',2};
+static EventHotKeyID a_HotKeyID = {'keyO',1};
+static EventHotKeyID b_HotKeyID = {'keyF',2};
 
 + (instancetype)ShareInstance
 {
@@ -57,10 +59,12 @@ OSStatus myHotKeyHandler(EventHandlerCallRef inHandlerCallRef, EventRef inEvent,
                           NULL,
                           &keyID);
         if (keyID.id == a_HotKeyID.id) {
-            NSLog(@"pressed:shift+command+A");
+            NSLog(@"pressed:control+command+O");
+            [[JWStatusBarManager ShareInstance] triggerGlobalHotKey];
+            [NSApp activateIgnoringOtherApps:YES];
         }
         if (keyID.id == b_HotKeyID.id) {
-            NSLog(@"pressed:option+B");
+            NSLog(@"pressed:option+command+option+F");
         }
     }
     
@@ -78,16 +82,16 @@ OSStatus myHotKeyHandler(EventHandlerCallRef inHandlerCallRef, EventRef inEvent,
                                    &g_EventHandlerRef);
     
     //注册快捷键:shift+command+A
-    RegisterEventHotKey(kVK_ANSI_A,
-                        cmdKey|shiftKey,
+    RegisterEventHotKey(kVK_ANSI_O,
+                        cmdKey|controlKey,
                         a_HotKeyID,
                         GetApplicationEventTarget(),
                         0,
                         &a_HotKeyRef);
     
     //注册快捷键:option+B
-    RegisterEventHotKey(kVK_ANSI_B,
-                        optionKey,
+    RegisterEventHotKey(kVK_ANSI_F,
+                        cmdKey|controlKey,
                         b_HotKeyID,
                         GetApplicationEventTarget(),
                         0,

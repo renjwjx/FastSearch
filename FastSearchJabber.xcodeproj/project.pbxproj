@@ -13,6 +13,9 @@
 		EEF83DB51DE9BF1C0067C3A9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEF83DB31DE9BF1C0067C3A9 /* MainMenu.xib */; };
 		EEF83DBE1DE9BF6A0067C3A9 /* GlobalHotKeyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF83DBD1DE9BF6A0067C3A9 /* GlobalHotKeyManager.m */; };
 		EEF83DC11DE9C0820067C3A9 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF83DC01DE9C0820067C3A9 /* Carbon.framework */; };
+		EEF83DC41DEB04BB0067C3A9 /* JWStatusBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF83DC31DEB04BB0067C3A9 /* JWStatusBarManager.m */; };
+		EEF83DC81DEB062E0067C3A9 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF83DC71DEB062E0067C3A9 /* AppKit.framework */; };
+		EEF83DCB1DEBFAC90067C3A9 /* JWQSearchWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF83DCA1DEBFAC90067C3A9 /* JWQSearchWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		EEF83DBC1DE9BF6A0067C3A9 /* GlobalHotKeyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalHotKeyManager.h; sourceTree = "<group>"; };
 		EEF83DBD1DE9BF6A0067C3A9 /* GlobalHotKeyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalHotKeyManager.m; sourceTree = "<group>"; };
 		EEF83DC01DE9C0820067C3A9 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		EEF83DC21DEB04BB0067C3A9 /* JWStatusBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWStatusBarManager.h; sourceTree = "<group>"; };
+		EEF83DC31DEB04BB0067C3A9 /* JWStatusBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWStatusBarManager.m; sourceTree = "<group>"; };
+		EEF83DC71DEB062E0067C3A9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		EEF83DC91DEBFAC90067C3A9 /* JWQSearchWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWQSearchWindow.h; sourceTree = "<group>"; };
+		EEF83DCA1DEBFAC90067C3A9 /* JWQSearchWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWQSearchWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF83DC81DEB062E0067C3A9 /* AppKit.framework in Frameworks */,
 				EEF83DC11DE9C0820067C3A9 /* Carbon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +71,10 @@
 			children = (
 				EEF83DAB1DE9BF1C0067C3A9 /* AppDelegate.h */,
 				EEF83DAC1DE9BF1C0067C3A9 /* AppDelegate.m */,
+				EEF83DC91DEBFAC90067C3A9 /* JWQSearchWindow.h */,
+				EEF83DCA1DEBFAC90067C3A9 /* JWQSearchWindow.m */,
+				EEF83DC21DEB04BB0067C3A9 /* JWStatusBarManager.h */,
+				EEF83DC31DEB04BB0067C3A9 /* JWStatusBarManager.m */,
 				EEF83DBC1DE9BF6A0067C3A9 /* GlobalHotKeyManager.h */,
 				EEF83DBD1DE9BF6A0067C3A9 /* GlobalHotKeyManager.m */,
 				EEF83DB11DE9BF1C0067C3A9 /* Assets.xcassets */,
@@ -83,6 +96,7 @@
 		EEF83DBF1DE9C0820067C3A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EEF83DC71DEB062E0067C3A9 /* AppKit.framework */,
 				EEF83DC01DE9C0820067C3A9 /* Carbon.framework */,
 			);
 			name = Frameworks;
@@ -159,6 +173,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF83DC41DEB04BB0067C3A9 /* JWStatusBarManager.m in Sources */,
+				EEF83DCB1DEBFAC90067C3A9 /* JWQSearchWindow.m in Sources */,
 				EEF83DB01DE9BF1C0067C3A9 /* main.m in Sources */,
 				EEF83DBE1DE9BF6A0067C3A9 /* GlobalHotKeyManager.m in Sources */,
 				EEF83DAD1DE9BF1C0067C3A9 /* AppDelegate.m in Sources */,

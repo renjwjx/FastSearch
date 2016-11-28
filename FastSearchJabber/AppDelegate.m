@@ -8,10 +8,12 @@
 
 #import "AppDelegate.h"
 #import "GlobalHotKeyManager.h"
+#import "JWStatusBarManager.h"
+#import "JWQSearchWindow.h"
 
 @interface AppDelegate ()
 
-@property (weak) IBOutlet NSWindow *window;
+@property (weak) IBOutlet JWQSearchWindow *window;
 @end
 
 @implementation AppDelegate
@@ -19,7 +21,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
     [[GlobalHotKeyManager ShareInstance] registerGlobalHotKey];
-    
+    [JWStatusBarManager ShareInstance];
 }
 
 
