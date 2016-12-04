@@ -16,6 +16,9 @@
 		EEF83DC41DEB04BB0067C3A9 /* JWStatusBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF83DC31DEB04BB0067C3A9 /* JWStatusBarManager.m */; };
 		EEF83DC81DEB062E0067C3A9 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF83DC71DEB062E0067C3A9 /* AppKit.framework */; };
 		EEF83DCB1DEBFAC90067C3A9 /* JWQSearchWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF83DCA1DEBFAC90067C3A9 /* JWQSearchWindow.m */; };
+		EEF83F171DF30BCE0067C3A9 /* JWUserNameDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF83F161DF30BCE0067C3A9 /* JWUserNameDataSource.m */; };
+		EEF83F1D1DF315260067C3A9 /* JWContactDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF83F1C1DF315260067C3A9 /* JWContactDataManager.m */; };
+		EEF83F201DF3E33D0067C3A9 /* JWContact.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF83F1F1DF3E33D0067C3A9 /* JWContact.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,12 @@
 		EEF83DC71DEB062E0067C3A9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		EEF83DC91DEBFAC90067C3A9 /* JWQSearchWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWQSearchWindow.h; sourceTree = "<group>"; };
 		EEF83DCA1DEBFAC90067C3A9 /* JWQSearchWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWQSearchWindow.m; sourceTree = "<group>"; };
+		EEF83F151DF30BCE0067C3A9 /* JWUserNameDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWUserNameDataSource.h; sourceTree = "<group>"; };
+		EEF83F161DF30BCE0067C3A9 /* JWUserNameDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWUserNameDataSource.m; sourceTree = "<group>"; };
+		EEF83F1B1DF315260067C3A9 /* JWContactDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWContactDataManager.h; path = ../JWContactDataManager.h; sourceTree = "<group>"; };
+		EEF83F1C1DF315260067C3A9 /* JWContactDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWContactDataManager.m; path = ../JWContactDataManager.m; sourceTree = "<group>"; };
+		EEF83F1E1DF3E33D0067C3A9 /* JWContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWContact.h; sourceTree = "<group>"; };
+		EEF83F1F1DF3E33D0067C3A9 /* JWContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWContact.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,10 +78,16 @@
 		EEF83DAA1DE9BF1C0067C3A9 /* FastSearchJabber */ = {
 			isa = PBXGroup;
 			children = (
+				EEF83F1B1DF315260067C3A9 /* JWContactDataManager.h */,
+				EEF83F1C1DF315260067C3A9 /* JWContactDataManager.m */,
+				EEF83F151DF30BCE0067C3A9 /* JWUserNameDataSource.h */,
+				EEF83F161DF30BCE0067C3A9 /* JWUserNameDataSource.m */,
 				EEF83DAB1DE9BF1C0067C3A9 /* AppDelegate.h */,
 				EEF83DAC1DE9BF1C0067C3A9 /* AppDelegate.m */,
 				EEF83DC91DEBFAC90067C3A9 /* JWQSearchWindow.h */,
 				EEF83DCA1DEBFAC90067C3A9 /* JWQSearchWindow.m */,
+				EEF83F1E1DF3E33D0067C3A9 /* JWContact.h */,
+				EEF83F1F1DF3E33D0067C3A9 /* JWContact.m */,
 				EEF83DC21DEB04BB0067C3A9 /* JWStatusBarManager.h */,
 				EEF83DC31DEB04BB0067C3A9 /* JWStatusBarManager.m */,
 				EEF83DBC1DE9BF6A0067C3A9 /* GlobalHotKeyManager.h */,
@@ -175,6 +190,9 @@
 			files = (
 				EEF83DC41DEB04BB0067C3A9 /* JWStatusBarManager.m in Sources */,
 				EEF83DCB1DEBFAC90067C3A9 /* JWQSearchWindow.m in Sources */,
+				EEF83F1D1DF315260067C3A9 /* JWContactDataManager.m in Sources */,
+				EEF83F201DF3E33D0067C3A9 /* JWContact.m in Sources */,
+				EEF83F171DF30BCE0067C3A9 /* JWUserNameDataSource.m in Sources */,
 				EEF83DB01DE9BF1C0067C3A9 /* main.m in Sources */,
 				EEF83DBE1DE9BF6A0067C3A9 /* GlobalHotKeyManager.m in Sources */,
 				EEF83DAD1DE9BF1C0067C3A9 /* AppDelegate.m in Sources */,
@@ -327,6 +345,7 @@
 				EEF83DBB1DE9BF1C0067C3A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

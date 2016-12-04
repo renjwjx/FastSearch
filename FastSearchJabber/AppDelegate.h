@@ -7,9 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "JWQSearchWindow.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
-
+@property (weak) IBOutlet JWQSearchWindow *window;
 
 @end
 

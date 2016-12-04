@@ -61,7 +61,6 @@ OSStatus myHotKeyHandler(EventHandlerCallRef inHandlerCallRef, EventRef inEvent,
         if (keyID.id == a_HotKeyID.id) {
             NSLog(@"pressed:control+command+O");
             [[JWStatusBarManager ShareInstance] triggerGlobalHotKey];
-            [NSApp activateIgnoringOtherApps:YES];
         }
         if (keyID.id == b_HotKeyID.id) {
             NSLog(@"pressed:option+command+option+F");

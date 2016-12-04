@@ -64,7 +64,7 @@
                         </items>
                     </menu>
                 </menuItem>
-                <menuItem title="File" id="dMs-cI-mzQ">
+                <menuItem title="File" hidden="YES" id="dMs-cI-mzQ">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="File" id="bib-Uj-vzu">
                         <items>
@@ -127,7 +127,7 @@
                         </items>
                     </menu>
                 </menuItem>
-                <menuItem title="Edit" id="5QF-Oa-p0T">
+                <menuItem title="Edit" hidden="YES" id="5QF-Oa-p0T">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Edit" id="W48-6f-4Dl">
                         <items>
@@ -346,7 +346,7 @@
                         </items>
                     </menu>
                 </menuItem>
-                <menuItem title="Format" id="jxT-CU-nIS">
+                <menuItem title="Format" hidden="YES" id="jxT-CU-nIS">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Format" id="GEO-Iw-cKr">
                         <items>
@@ -608,7 +608,7 @@
                         </items>
                     </menu>
                 </menuItem>
-                <menuItem title="View" id="H8h-7b-M4v">
+                <menuItem title="View" hidden="YES" id="H8h-7b-M4v">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="View" id="HyV-fh-RgO">
                         <items>
@@ -640,7 +640,7 @@
                         </items>
                     </menu>
                 </menuItem>
-                <menuItem title="Window" id="aUF-d1-5bR">
+                <menuItem title="Window" hidden="YES" id="aUF-d1-5bR">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Window" systemMenu="window" id="Td7-aD-5lo">
                         <items>
@@ -681,38 +681,88 @@
         </menu>
         <window title="FastSearchJabber" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g" customClass="JWQSearchWindow">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-            <windowPositionMask key="initialPositionMask" topStrut="YES"/>
-            <rect key="contentRect" x="391" y="674" width="542" height="65"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="459" y="512" width="493" height="342"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="542" height="65"/>
+                <rect key="frame" x="0.0" y="0.0" width="493" height="342"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-t9-iLY">
-                        <rect key="frame" x="10" y="6" width="456" height="53"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Input Name to Chat" drawsBackground="YES" usesSingleLineMode="YES" id="CwV-6A-cFe">
-                            <font key="font" metaFont="system" size="32"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                    <searchField wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vu6-V1-W2Q">
+                        <rect key="frame" x="20" y="312" width="453" height="22"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Input name/cec to search" usesSingleLineMode="YES" bezelStyle="round" id="Wr3-VD-je1">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YBC-ff-QJU">
-                        <rect key="frame" x="474" y="9" width="48" height="48"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
-                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Jabber" id="pLX-yx-0hY"/>
-                    </imageView>
+                        </searchFieldCell>
+                    </searchField>
+                    <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQV-N3-OST">
+                        <rect key="frame" x="20" y="77" width="453" height="227"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                        <clipView key="contentView" ambiguous="YES" id="Mur-9z-tiW">
+                            <rect key="frame" x="1" y="0.0" width="451" height="226"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" multipleSelection="NO" autosaveColumns="NO" headerView="82h-EL-0mj" id="KY0-MM-1XQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="451" height="209"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <size key="intercellSpacing" width="3" height="2"/>
+                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                    <tableColumns>
+                                        <tableColumn identifier="DisplayName" width="226" minWidth="40" maxWidth="1000" id="qUS-HA-ib4">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Display Name">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                            </tableHeaderCell>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" identifier="MyView" title="Display Name" placeholderString="" id="mkR-yY-4SR">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                        </tableColumn>
+                                        <tableColumn identifier="CECName" width="218.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="966-wm-BEb">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="CEC Name">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </tableHeaderCell>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" alignment="left" title="CEC" id="xh0-q9-crD">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                        </tableColumn>
+                                    </tableColumns>
+                                </tableView>
+                            </subviews>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="zw1-O7-qDR">
+                            <rect key="frame" x="1" y="264" width="454" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="Owy-CK-Aty">
+                            <rect key="frame" x="224" y="17" width="15" height="102"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <tableHeaderView key="headerView" id="82h-EL-0mj">
+                            <rect key="frame" x="0.0" y="0.0" width="451" height="17"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </tableHeaderView>
+                    </scrollView>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="136" y="-280.5"/>
+            <point key="canvasLocation" x="-113.5" y="-310"/>
         </window>
         <customObject id="Nsu-kl-e1M" customClass="JWQSearchWindow">
             <connections>
-                <outlet property="inputText" destination="NDk-t9-iLY" id="81h-pb-Ige"/>
+                <outlet property="nameTableView" destination="KY0-MM-1XQ" id="YYr-rw-Hcq"/>
+                <outlet property="searchText" destination="Vu6-V1-W2Q" id="soB-9z-eU6"/>
             </connections>
         </customObject>
     </objects>
-    <resources>
-        <image name="Jabber" width="60" height="60"/>
-    </resources>
 </document>

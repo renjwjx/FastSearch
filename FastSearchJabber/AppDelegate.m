@@ -13,7 +13,7 @@
 
 @interface AppDelegate ()
 
-@property (weak) IBOutlet JWQSearchWindow *window;
+
 @end
 
 @implementation AppDelegate

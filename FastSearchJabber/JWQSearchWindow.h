@@ -8,7 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface JWQSearchWindow : NSWindow<NSTextFieldDelegate>
 
-@property (weak, nonatomic) IBOutlet NSTextField* inputText;
+@interface JWQSearchWindow : NSWindow<NSTextFieldDelegate, NSTableViewDelegate, NSSearchFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet NSSearchField* searchText;
+@property (weak, nonatomic) IBOutlet NSTableView* nameTableView;
 @end

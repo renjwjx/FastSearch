@@ -34,15 +34,13 @@
 - (IBAction)handleStatusAction:(id)sender
 {
     NSLog(@"Status Action");
+    [self triggerGlobalHotKey];
 }
 
 - (void)triggerGlobalHotKey
 {
     NSLog(@"HotKey Action");
-  //  NSInteger heiht = NSApp.mainWindow.frame.size.height;
-    static NSInteger heigh = 100;
-    heigh = heigh + 100;
-    [NSApp.mainWindow setFrame:CGRectMake(100, 100, 100, heigh) display:YES animate:YES];
+    [NSApp activateIgnoringOtherApps:YES];
 }
 
 @end
