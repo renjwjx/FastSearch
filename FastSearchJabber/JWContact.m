@@ -36,8 +36,8 @@
 
 - (BOOL)ContainsString:(NSString*)str
 {
-    if ([self.displayName containsString:str]
-        || [self.cecName containsString:str]) {
+    if (([self.displayName rangeOfString:str options:NSCaseInsensitiveSearch].location != NSNotFound)
+        || [self.cecName rangeOfString:str options:NSCaseInsensitiveSearch].location != NSNotFound) {
         return YES;
     }
     return NO;

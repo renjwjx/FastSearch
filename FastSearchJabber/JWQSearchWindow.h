@@ -13,4 +13,6 @@
 
 @property (weak, nonatomic) IBOutlet NSSearchField* searchText;
 @property (weak, nonatomic) IBOutlet NSTableView* nameTableView;
+@property (weak, nonatomic) IBOutlet NSScrollView* scrollView;
+
 @end

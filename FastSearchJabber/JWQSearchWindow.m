@@ -23,8 +23,7 @@
     self.searchText.sendsSearchStringImmediately = NO;
     self.nameTableView.delegate = self;
     self.nameTableView.dataSource = [JWUserNameDataSource ShareInstance];
-    
-    [self addObserver:[JWContactDataManager ShareInstance] forKeyPath:@"@strFilter" options:NSKeyValueObservingOptionNew context:nil];
+    [[JWContactDataManager ShareInstance] addObserver:self forKeyPath:@"strFilter" options:NSKeyValueObservingOptionNew context:nil];
 }
 
 - (void)becomeKeyWindow
@@ -50,8 +49,8 @@
     NSInteger tableView_heigh = numOfContact * TABLEVIEW_ROW_HEIGH;
     
     NSLog(@"keyPath: %@, tableView_heigh:%ld", keyPath, tableView_heigh);
-    NSRect f = self.nameTableView.frame;
-    f.size.height = tableView_heigh;
+    NSRect f = self.contentView.frame;
+    f.size.height = self.nameTableView.frame.size.height;
     self.nameTableView.frame = f;
     NSLog(@"keyPath: %@, tableView_heigh:%ld, frame:%@", keyPath, tableView_heigh, NSStringFromRect(f));
 }
@@ -76,7 +75,7 @@
 - (void)controlTextDidChange:(NSNotification *)obj
 {
     NSLog(@"searchText: %@", [obj.object stringValue]);
-    [JWContactDataManager ShareInstance].strFilter = [obj.object stringValue];
+    [[JWContactDataManager ShareInstance] setStrFilter:[obj.object stringValue]];
     [self.nameTableView reloadData];
     
     if (self.nameTableView.numberOfRows > 0) {

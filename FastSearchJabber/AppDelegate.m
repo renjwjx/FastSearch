@@ -10,6 +10,8 @@
 #import "GlobalHotKeyManager.h"
 #import "JWStatusBarManager.h"
 #import "JWQSearchWindow.h"
+#import "JWUserNameDataSource.h"
+#import "JWContactDataManager.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +24,8 @@
     // Insert code here to initialize your application
     [[GlobalHotKeyManager ShareInstance] registerGlobalHotKey];
     [JWStatusBarManager ShareInstance];
+    [JWContactDataManager ShareInstance];
+    [JWUserNameDataSource ShareInstance];
 }
 
 
