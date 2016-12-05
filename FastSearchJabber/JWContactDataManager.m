@@ -30,12 +30,19 @@
 
 - (NSArray*)loadContactData
 {
-    JWContact* contact1 = [JWContact contactWithDisplayName:@"Xuemin Mei" cecName:@"xumei"];
-    JWContact* contact2 = [JWContact contactWithDisplayName:@"Hui Luo" cecName:@"huiluo"];
-    JWContact* contact3 = [JWContact contactWithDisplayName:@"Binli He" cecName:@"binlhe"];
-    JWContact* contact4 = [JWContact contactWithDisplayName:@"Cheng Chang" cecName:@"chenchan"];
+    NSDictionary* contactList = @{
+                             @"Aileen Zhang":@"linzhan3"};
+    NSMutableArray<JWContact*> *contacts = [NSMutableArray arrayWithCapacity:500];
+    NSArray* allKeys = [contactList allKeys];
     
-    return @[contact1, contact2, contact3, contact4];
+    NSArray* allDisplayNames = [allKeys sortedArrayUsingSelector:@selector(compare:)];
+    for (NSString* aDisplayNames in allDisplayNames) {
+        NSString* cecName = [contactList objectForKey:aDisplayNames];
+        JWContact* aContact = [JWContact contactWithDisplayName:aDisplayNames cecName:cecName];
+        [contacts addObject:aContact];
+    }
+    
+    return contacts;
 }
 
 @end

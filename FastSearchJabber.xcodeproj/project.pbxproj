@@ -39,8 +39,8 @@
 		EEF83DCA1DEBFAC90067C3A9 /* JWQSearchWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWQSearchWindow.m; sourceTree = "<group>"; };
 		EEF83F151DF30BCE0067C3A9 /* JWUserNameDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWUserNameDataSource.h; sourceTree = "<group>"; };
 		EEF83F161DF30BCE0067C3A9 /* JWUserNameDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWUserNameDataSource.m; sourceTree = "<group>"; };
-		EEF83F1B1DF315260067C3A9 /* JWContactDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWContactDataManager.h; path = ../JWContactDataManager.h; sourceTree = "<group>"; };
-		EEF83F1C1DF315260067C3A9 /* JWContactDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWContactDataManager.m; path = ../JWContactDataManager.m; sourceTree = "<group>"; };
+		EEF83F1B1DF315260067C3A9 /* JWContactDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWContactDataManager.h; sourceTree = "<group>"; };
+		EEF83F1C1DF315260067C3A9 /* JWContactDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWContactDataManager.m; sourceTree = "<group>"; };
 		EEF83F1E1DF3E33D0067C3A9 /* JWContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWContact.h; sourceTree = "<group>"; };
 		EEF83F1F1DF3E33D0067C3A9 /* JWContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWContact.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -253,7 +253,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -294,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
